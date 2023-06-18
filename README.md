@@ -68,5 +68,6 @@ Todolist/
 
 - HTML
 - CSS3
+- SCSS
 - JavaScript
 - React

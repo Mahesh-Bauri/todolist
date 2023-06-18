@@ -2,7 +2,7 @@
 
 Simple todolist react js app.
 
-### [Live demo]()
+### [Live demo](https://todolist-react-cn.netlify.app/)
 
 ![Imgur](https://i.imgur.com/nZBnncf.png)
 

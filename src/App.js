@@ -1,7 +1,7 @@
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
-import TodoList from "./component/todolist/TodoList";
-import TodoProvider from "./context/todoContext";
+import TodoList from "./components/todolist/TodoList";
+import TodoProvider from "./contexts/todoContext";
 import { ToastContainer } from "react-toastify";
 
 function App() {

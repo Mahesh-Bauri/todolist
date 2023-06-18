@@ -1,6 +1,6 @@
 import React from "react";
 import "./todolist.styles.scss";
-import { useTodos } from "../../context/todoContext";
+import { useTodos } from "../../contexts/todoContext";
 import Todo from "../todo/Todo";
 import { MdAdd } from "react-icons/md";
 

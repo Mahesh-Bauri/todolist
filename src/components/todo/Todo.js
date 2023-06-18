@@ -3,7 +3,7 @@ import "./todo.styles.scss";
 import { RxCross1 } from "react-icons/rx";
 import { FiEdit } from "react-icons/fi";
 import { FaRegCheckCircle, FaCheckCircle } from "react-icons/fa";
-import { useTodos } from "../../context/todoContext";
+import { useTodos } from "../../contexts/todoContext";
 
 const Todo = ({ title, completed, id }) => {
   // get state and function from Custom Hooks

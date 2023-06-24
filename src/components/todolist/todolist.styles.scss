@@ -1,92 +1,107 @@
 .todolist-container {
-  max-width: 100%;
-  width: 650px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 2rem;
-  margin: 0 auto;
-  gap: 1.5rem;
+	max-width: 100%;
+	width: 650px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem 2rem;
+	margin: 0 auto;
+	gap: 1.5rem;
 
-  h1 {
-    color: #f8fafc;
-    font-weight: 500;
-    padding: 1rem;
-  }
+	h1 {
+		color: #f8fafc;
+		font-weight: 500;
+		padding: 1rem;
+	}
 
-  .todolist-input {
-    display: flex;
-    width: 100%;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	.todolist-input {
+		display: flex;
+		width: 100%;
+		background-color: white;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
-    input {
-      flex: 4;
-      font-size: 1.2rem;
-      color: #64748b;
-      padding: 1rem 2rem;
-      border: none;
-      outline: none;
-      border-radius: 6px;
+		input {
+			flex: 4;
+			font-size: 1.2rem;
+			color: #64748b;
+			padding: 1rem 2rem;
+			border: none;
+			outline: none;
+			border-radius: 6px;
 
-      &:focus {
-        background-color: #f1f5f9;
-      }
+			&:focus {
+				background-color: #f1f5f9;
+			}
 
-      &::placeholder {
-        color: #cbd5e1;
-        font-weight: 300;
-      }
-    }
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      flex: 1;
-      border: none;
-      color: #94a3b8;
-      font-size: 1.5rem;
-      font-weight: 600;
-      border-left: 1px solid #e2e8f0;
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
+			&::placeholder {
+				color: #cbd5e1;
+				font-weight: 300;
+			}
+		}
+		button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			flex: 1;
+			border: none;
+			color: #94a3b8;
+			font-size: 1.5rem;
+			font-weight: 600;
+			border-left: 1px solid #e2e8f0;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
 
-      &:hover {
-        cursor: pointer;
-        background-color: #f1f5f9;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+				background-color: #f1f5f9;
+			}
+		}
+	}
 
-  .listItem {
-    width: 100%;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    min-height: 500px;
+	.empty {
+		padding-top: 2rem;
+		font-size: 2rem;
+		font-weight: 300;
+		color: #f8fafc;
+	}
 
-    ul {
-      width: 100%;
-      list-style: none;
-      padding-bottom: 2rem;
+	.loading {
+		padding-top: 2rem;
+		font-size: 2rem;
+		font-weight: 300;
+		color: #f8fafc;
+	}
 
-      li {
-        padding: 1rem 1rem;
-        border-bottom: 1px solid #e2e8f0;
+	.listItem {
+		width: 100%;
+		background-color: white;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+		// min-height: 500px;
+		max-height: max-content;
 
-        &:hover {
-          border-top-left-radius: 6px;
-          border-top-right-radius: 6px;
-          background-color: #f9fafb;
-          transition-property: background-color;
-          transition-duration: 0.2s;
-          transition-timing-function: ease-in-out;
-          box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-        }
-      }
-    }
-  }
+		ul {
+			width: 100%;
+			list-style: none;
+			padding-bottom: 3rem;
+
+			li {
+				padding: 1rem 1rem;
+				border-bottom: 1px solid #e2e8f0;
+
+				&:hover {
+					border-top-left-radius: 6px;
+					border-top-right-radius: 6px;
+					background-color: #f9fafb;
+					transition-property: background-color;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-in-out;
+					box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+				}
+			}
+		}
+	}
 }
